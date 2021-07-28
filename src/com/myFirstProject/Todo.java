@@ -30,5 +30,12 @@ public class Todo {
     public ArrayList<Item> getItems() {
         return this.items;
     }
+    public void deleteFirst(){
+        this.items.remove(0);
+
+    }
+    public void deleteSecond(){
+        this.items.remove(1);
+    }
 }
 

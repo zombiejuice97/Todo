@@ -15,16 +15,30 @@ public class Main {
         one.unDone();
         System.out.println(one.getDone()); */
         Todo thingsToDo = new Todo("Things to do ", "What you have to do today");
-        thingsToDo.addItem("item 1");
+        thingsToDo.addItem("1.write code");
         System.out.println(thingsToDo.getTitle());
         System.out.println(thingsToDo.getDescription());
-        thingsToDo.addItem("Item 2 ");
+        thingsToDo.addItem("2.run the code");
+        thingsToDo.addItem("3.Write a delete method");
+
 
         ArrayList<Item> items = thingsToDo.getItems();
+
         for (int i=0 ; i < items.size(); i++) {
             System.out.println(items.get(i).getName());
         }
 
+        thingsToDo.deleteFirst();
+
+       //System.out.println(thingsToDo.getItems());
+        for (int i=0 ; i < items.size(); i++) {
+            System.out.println(items.get(i).getName());
+        }
+
+        thingsToDo.deleteSecond();
+        for (int i=0 ; i < items.size(); i++) {
+            System.out.println(items.get(i).getName());
+        }
 
     }
 }
