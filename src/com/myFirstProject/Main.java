@@ -28,17 +28,14 @@ public class Main {
             System.out.println(items.get(i).getName());
         }
 
-        thingsToDo.deleteFirst();
+        thingsToDo.delete(2);
 
-       //System.out.println(thingsToDo.getItems());
+
         for (int i=0 ; i < items.size(); i++) {
             System.out.println(items.get(i).getName());
         }
 
-        thingsToDo.deleteSecond();
-        for (int i=0 ; i < items.size(); i++) {
-            System.out.println(items.get(i).getName());
-        }
+
 
     }
 }
